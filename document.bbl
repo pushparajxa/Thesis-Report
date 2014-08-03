@@ -1,0 +1,21 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{A.Thusoo, J.Sarma, N.Jain, Z.Shao, P.Chakka,
+  S.Anthony, H.Liu, P.Wyckoff, \& R.Murthy}{A.Thusoo et~al.}{2009}]{22}
+A.Thusoo, J.Sarma, N.Jain, Z.Shao, P.Chakka, S.Anthony, H.Liu, P.Wyckoff, \&
+  R.Murthy (2009).
+\newblock Hive: a warehousing solution over a map reduce framework.
+\newblock In {\em Proceedings of the VLDB Endowment}, Volume~2, pp.\
+  1626--1629.
+
+\bibitem[\protect\citeauthoryear{Foundation}{Foundation}{}]{webiste21}
+Foundation, A.~S.
+\newblock "apache pig".
+\newblock Accessed August 2, 2014.\url{http://pig.apache.org}.
+
+\bibitem[\protect\citeauthoryear{White}{White}{2009}]{h17}
+White, T. (2009).
+\newblock {\em Hadoop: The Definitive Guide}.
+\newblock OReily Media.
+
+\end{thebibliography}
