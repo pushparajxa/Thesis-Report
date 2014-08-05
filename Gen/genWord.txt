@@ -1,0 +1,6 @@
+﻿However,  the  default  isolation  level  of  NDB  is   read  committed,  which  allows   the  results   of
+write  operations   in  transactions   to  be  exposed  to  read  operations   in  different  concurrent
+transactions.  This   means   that  a  relatively   long  running  read  transaction  could  read  two
+different  versions   of  data  within  the  same  transaction,  known  as  a fuzzy  read, or it could get
+different  sets   of  results   if the same query  is  issued twice within the same transaction ­ this  is
+known as a phantom read.

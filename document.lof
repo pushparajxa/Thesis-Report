@@ -1,4 +1,9 @@
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces HDFS Architecture.\relax }}{7}{figure.caption.12}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces HOP-HDFS Table relations.\relax }}{11}{figure.caption.13}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces HOP-HDFS Schema\relax }}{12}{figure.caption.14}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces MySQL cluster\relax }}{17}{figure.caption.16}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
@@ -6,6 +11,5 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {chapter}{A\hskip 1em\relax Commodo Consequat}{37}{chapter.1}
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Soluta nobis est eligendi optio.}}{37}{figure.1.1}
+\contentsline {chapter}{A\hskip 1em\relax Commodo Consequat}{47}{chapter.1}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Soluta nobis est eligendi optio.\relax }}{47}{figure.caption.21}
