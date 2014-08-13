@@ -1,0 +1,104 @@
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -*- coding: utf-8; mode: latex -*- %%
+  %
+%%%%%                         CHAPTER
+ %%%
+  %
+
+% $Id: 1020-lorem-ipsum.tex,v 1.2 2009/06/19 15:51:46 david Exp $
+% $Log: 1020-lorem-ipsum.tex,v $
+% Revision 1.2  2009/06/19 15:51:46  david
+% *** empty log message ***
+%
+% Revision 1.1  2007/11/23 09:52:39  david
+% *** empty log message ***
+%
+%
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %
+%%%%%                           HEAD MATTER
+ %%%
+  %
+
+\chapter{Read-Only Nested Snapshots Implementation and Evaluation}
+%\addcontentsline{lof}{chapter}{\thechapter\quad Lorem Ipsum}
+%\addcontentsline{lot}{chapter}{\thechapter\quad Lorem Ipsum}
+\label{ch:RORLSSIE}
+Following conditions are applied to the solution
+\begin{enumerate}
+\item Creation of directories with Quota, either name-space quota or disk-space quota is not allowed.
+\item Each file consists of blocks. Each blocks-size is typically 64 MB but can be set to any value.Blocks should be written completely.
+\end{enumerate}
+
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %
+%%%%%                        FIRST SECTION
+ %%%
+  %
+
+\section{Modifications to the Schema}
+
+Following columns need to be added to the Inodes table described in the schema \ref{fig:HDFS_table_schema} of HOP File System.
+\begin{enumerate}
+\item isDeleted \\\\
+\begin{tabular}{|c|p{15cm}|}
+\hline
+Value&Summary\\
+\hline
+0&Indicates that this Inode is not deleted.\\
+\hline
+1&Indicates that this Inode deleted after Root Level snapshot was taken.\\ 
+\hline
+\end{tabular} \\
+\item status \\\\
+\begin{tabular}{|c|p{15cm}|}
+\hline
+Value&Summary\\
+\hline
+0&Indicates that this Inode was created before taking Root Level Snapshot.\\
+\hline
+2&Indicates that this Inode created before taking Root Level snapshot but modified after that.\\ 
+\hline
+3&Indicates that this Inode was created after taking Root Level snapshot.\\ 
+\hline
+\end{tabular} \\
+
+\end{enumerate}
+\pagebreak
+
+Following Columns should be added to BlockInfos table described in the schema \ref{fig:HDFS_table_schema}.
+\begin{enumerate}
+\item status \\\\
+\begin{tabular}{|c|p{15cm}|}
+\hline
+Value&Summary\\
+\hline
+0&Indicates that this Block was created before taking Root Level Snapshot.\\
+\hline
+2&Indicates that this Block created before taking Root Level snapshot but modified after that.\\ 
+\hline
+3&Indicates that this Block was created after taking Root Level snapshot.\\ 
+\hline
+\end{tabular} \\
+\end{enumerate}
+
+
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %
+%%%%%                         ANOTHER SECTION
+ %%%
+  %
+
+
+  %
+ %%%
+%%%%%                        THE END
+  %
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "tese"
+%%% End: 

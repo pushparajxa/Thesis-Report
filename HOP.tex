@@ -199,6 +199,18 @@ transactions.  This   means   that  a  relatively   long  running  read  transac
 different  versions   of  data  within  the  same  transaction,  known  as  a fuzzy  read, or it could get
 different  sets   of  results   if the same query  is  issued twice within the same transaction  this  is
 known as a phantom read. In report\cite{12} and paper \cite{hoppaper} they proposed and implemented the snapshot-isolation method \ref{hopAlgo} which pessimistically locks the rows of data preventing other transactions from accessing. 
+Transactions that contain both a read and a modify filesystem operation for the same shared metadata object should be serialized based on the serialization rule:\\\\
+$ -\forall(w_{i},w_{j}) \hspace{1em} if \hspace{1em} X_{wi}\cap X_{wj} \neq \phi$ then transactions of $ (w_{i},w_{j})$ must be serialized; $
+-\forall(r_{i},w_{j})  \hspace{1em} if \hspace{1em} X_{ri}\cap X_{wj} \neq \phi$ then transactions of $(r_{i},w_{j})$  must be serialized.\\\\
+First, the hierarchy of the file system to define a partial ordering over
+inodes. Transactions follow this partial ordering when taking locks, ensuring
+that the circular wait condition for deadlock never holds. Similarly, the partial
+ordering ensures that if a transaction takes an exclusive lock on a directory inode,
+subsequent transactions will be prevented from accessing the directory's subtree
+until the lock on the directory's lock is released. Implicit locks are required for
+operations such as creating files, where concurrent metadata operations could
+return success even though only one of actually succeeded. For operations such
+as deleting a directory, explicit locks on all child nodes are required.
 
 \begin{algorithm}[h]
 \caption{Snapshotting taking locks in a total order}
@@ -238,12 +250,6 @@ Mysql  Server with an inmemory  clustered storage engine called NDB Cluster (whi
 for  “Network   DataBase”)  .  It  provides   a  sharednothing  system   with  no  single
 point of failure.
 
-\begin{figure}[hb]
-\centering  
- \includegraphics[scale=0.75]{figs/preliminar/mysql_cluster.png}
-  \caption{MySQL cluster}
-  \label{fig:mysqlCluster}
-\end{figure}
 
 
 Mysql  Cluster  is   a  compound  of  different  processes   called  \textbf{nodes}.  The  main  nodes   are
@@ -256,7 +262,7 @@ stored  by   ndbd  is   called  a  \textbf{partition}.  The  partitions   of  da
 same node group while node groups are calculated indirectly as following:
 $$Number of Node groups  = \frac{number of  datanodes}{number of  replicas} $$
 A  simple  cluster  of  4  datanodes   with  replication  factor  of  2  and  consequently  2 node groups
-are shown in figure 8.
+are shown in figure \ref{fig:nodegroups}.
 As   it  can  be  seen,  the  data stored in the database are divided into 4 partitions. There are two
 replicas   of  each  partition  into  ndbds   of  the  same  node  group.  So  even  if  one  of the ndbds  in
 each  of  the  node  groups   are  failed, the whole data in the cluster will be available. However, if
@@ -269,6 +275,20 @@ node  groups.  The  detail  of  their  system   configuration  is   available  i
 paper. The results for write operations are shown in figure \ref{fig:mysqlCluster}.
 The  72  million  reads   and  19.5  million  write  operations   per  second  of  Mysql  Cluster  shows
 that it has a high throughput for simple read and write operations.
+\pagebreak
+\begin{figure}[h!]
+\centering  
+ \includegraphics[scale=0.65]{figs/preliminar/mysql_cluster.png}
+  \caption{MySQL cluster}
+  \label{fig:mysqlCluster}
+\end{figure}
+
+\begin{figure}[h!]
+\centering  
+ \includegraphics[scale=0.4]{figs/preliminar/nodegroups.png}
+  \caption{Node groups of MySQL cluster}
+  \label{fig:nodegroups}
+\end{figure}
 
 \subsection{Concurrency Control in NDBCluster}
 NDB  supports   pessimistic   concurrency   control  based  on  locking.  It  supports   row  level

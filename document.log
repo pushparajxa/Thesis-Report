@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.2.16)  5 AUG 2014 22:46
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.8.6)  14 AUG 2014 01:34
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -6,7 +6,13 @@ entering extended mode
 (./document.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, loaded.
+yphenation, farsi, arabic, croatian, bulgarian, ukrainian, russian, czech, slov
+ak, danish, dutch, finnish, french, basque, ngerman, german, german-x-2009-06-1
+9, ngerman-x-2009-06-19, ibycus, monogreek, greek, ancientgreek, hungarian, san
+skrit, italian, latin, latvian, lithuanian, mongolian2a, mongolian, bokmal, nyn
+orsk, romanian, irish, coptic, serbian, turkish, welsh, esperanto, uppersorbian
+, estonian, indonesian, interlingua, icelandic, kurmanji, slovenian, polish, po
+rtuguese, spanish, galician, catalan, swedish, ukenglish, pinyin, loaded.
 (/usr/share/texmf-texlive/tex/latex/base/book.cls
 Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texmf-texlive/tex/latex/base/bk11.clo
@@ -700,54 +706,66 @@ Package caption Info: floatflt package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: subfigure package is loaded.
 Package caption Info: wrapfig package is loaded.
+)
+(/usr/share/texmf-texlive/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2008/02/07
+
+Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
+<2008/02/07> (tvz)
+\FV@CodeLineNo=\count150
+\FV@InFile=\read1
+\FV@TabBox=\box67
+\c@FancyVerbLine=\count151
+\FV@StepNumber=\count152
+\FV@OutFile=\write6
 ) (./document.aux)
 \openout1 = `document.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
 
 (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count150
+\scratchcounter=\count153
 \scratchdimen=\dimen156
-\scratchbox=\box67
-\nofMPsegments=\count151
-\nofMParguments=\count152
+\scratchbox=\box68
+\nofMPsegments=\count154
+\nofMParguments=\count155
 \everyMPshowfont=\toks31
-\MPscratchCnt=\count153
+\MPscratchCnt=\count156
 \MPscratchDim=\dimen157
-\MPnumerator=\count154
+\MPnumerator=\count157
 \everyMPtoPDFconversion=\toks32
 )
-Package hyperref Info: Link coloring ON on input line 56.
+Package hyperref Info: Link coloring ON on input line 57.
  (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
 
 (/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
 Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
-\c@section@level=\count155
+\c@section@level=\count158
 )
-LaTeX Info: Redefining \ref on input line 56.
-LaTeX Info: Redefining \pageref on input line 56.
+LaTeX Info: Redefining \ref on input line 57.
+LaTeX Info: Redefining \pageref on input line 57.
  (./document.out)
 (./document.out)
-\@outlinefile=\write6
-\openout6 = `document.out'.
+\@outlinefile=\write7
+\openout7 = `document.out'.
 
-\AtBeginShipoutBox=\box68
+\AtBeginShipoutBox=\box69
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
  (./0000-preliminar.tex
@@ -766,7 +784,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 59.
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-<figs/preliminar/Logo_IST_web.pdf, id=226, 459.7175pt x 117.43875pt>
+<figs/preliminar/Logo_IST_web.pdf, id=230, 459.7175pt x 117.43875pt>
 File: figs/preliminar/Logo_IST_web.pdf Graphic file (type pdf)
 
 <use figs/preliminar/Logo_IST_web.pdf>
@@ -824,21 +842,21 @@ LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10.95> not available
  [1
 
 ] [2])
-\tf@toc=\write7
-\openout7 = `document.toc'.
+\tf@toc=\write8
+\openout8 = `document.toc'.
 
  [3] [4
 
 ] (./document.lof)
-\tf@lof=\write8
-\openout8 = `document.lof'.
+\tf@lof=\write9
+\openout9 = `document.lof'.
 
  [5] [6
 
 ]
 (./document.lot)
-\tf@lot=\write9
-\openout9 = `document.lot'.
+\tf@lot=\write10
+\openout10 = `document.lot'.
 
  [7] [8
 
@@ -846,19 +864,19 @@ LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10.95> not available
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.79 \part{Lorem Ipsum}
+l.80 \part{Lorem Ipsum}
                         [1
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.79 \part{Lorem Ipsum}
+l.80 \part{Lorem Ipsum}
                         [2]pdfTeX warning (ext4): destination with the same ide
 ntifier (name{page.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.89 \newpage
+l.90 \newpage
               [3
 
 ] (./hadoop.texpdfTeX warning (ext4): destination with the same identifier (nam
@@ -876,7 +894,7 @@ been already used, duplicate ignored
                    \relax 
 l.71  \subsection
                  {HDFS Architecture} [5]
-<figs/preliminar/HDFS_Architecture.png, id=430, 960.58875pt x 599.23875pt>
+<figs/preliminar/HDFS_Architecture.png, id=446, 960.58875pt x 599.23875pt>
 File: figs/preliminar/HDFS_Architecture.png Graphic file (type png)
 
 <use figs/preliminar/HDFS_Architecture.png>
@@ -922,11 +940,11 @@ s been already used, duplicate ignored
                    \relax 
 l.113 
        [10]
-<figs/preliminar/HOP_table_relation.png, id=477, 733.74126pt x 421.575pt>
+<figs/preliminar/HOP_table_relation.png, id=493, 733.74126pt x 421.575pt>
 File: figs/preliminar/HOP_table_relation.png Graphic file (type png)
 
 <use figs/preliminar/HOP_table_relation.png>
-<figs/preliminar/HOP_HDFS_Schema.png, id=478, 761.84625pt x 891.33pt>
+<figs/preliminar/HOP_HDFS_Schema.png, id=494, 761.84625pt x 891.33pt>
 File: figs/preliminar/HOP_HDFS_Schema.png Graphic file (type png)
 
 <use figs/preliminar/HOP_HDFS_Schema.png>pdfTeX warning (ext4): destination wit
@@ -939,107 +957,481 @@ Overfull \hbox (62.23941pt too wide) in paragraph at lines 145--191
  [][] 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--214
+
+ []
+
+
+Underfull \hbox (badness 4060) in paragraph at lines 196--214
+\OMS/cmsy/m/n/10.95 ^^@8\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 w[]; w[]\OT1/cm
+r/m/n/10.95 ) \OML/cmm/m/it/10.95 if X[] \OMS/cmsy/m/n/10.95 \ \OML/cmm/m/it/10
+.95 X[] \OMS/cmsy/m/n/10.95 6\OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 ^^^$ \OT1
+/ppl/m/n/10.95 then trans-ac-tions of $\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 
+w[]; w[]\OT1/cmr/m/n/10.95 )$ \OT1/ppl/m/n/10.95 must be se-ri-al-ized;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--214
+
+ []
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.12}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.202 
+l.214 
        [12 <./figs/preliminar/HOP_HDFS_Schema.png>] [13]
-<figs/preliminar/mysql_cluster.png, id=501, 585.18625pt x 373.395pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figs/preliminar/mysql_cluster.png, id=520, 585.18625pt x 373.395pt>
 File: figs/preliminar/mysql_cluster.png Graphic file (type png)
 
-<use figs/preliminar/mysql_cluster.png> [14] [15]) [16] [17 <./figs/preliminar/
-mysql_cluster.png>] [18
+<use figs/preliminar/mysql_cluster.png> [14] [15]
+<figs/preliminar/nodegroups.png, id=534, 501.875pt x 506.89375pt>
+File: figs/preliminar/nodegroups.png Graphic file (type png)
 
-] [19] [20] [21
+<use figs/preliminar/nodegroups.png>
 
-]
-(./RO_Nested_Snapshot_problem_Definition.tex [22
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-]
+[16 <./figs/preliminar/mysql_cluster.png>]) [17 <./figs/preliminar/nodegroups.p
+ng>] [18
+
+] [19] [20] (./RO_Nested_Snapshot_problem_Definition.tex
 Chapter 3.
-[23]
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 65.
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--30
+
+ []
+
+[21
+
+]) (./RO_RootLevel_Single_Snapshot_problem_Definition.tex [22]
+Chapter 4.
+[23
+
+]) [24] [25
+
+] [26] (./RO_Nested_Snapshots_Solution.tex
+Chapter 5.
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--61
+
+ []
+
+
+Overfull \hbox (50.32988pt too wide) in paragraph at lines 51--61
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--71
+
+ []
+
+
+Overfull \hbox (50.32988pt too wide) in paragraph at lines 61--71
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--71
+
+ []
+
+[27
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 74--84
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--84
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--94
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--94
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--106
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--106
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--117
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--117
+
+ []
+
+[28]
+Underfull \hbox (badness 10000) in paragraph at lines 118--128
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--128
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--138
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--138
+
+ []
+
+
+Underfull \hbox (badness 1005) in paragraph at lines 129--138
+\OT1/ppl/m/n/10.95 When a di-rec-tory or file is moved into this di-rec-tory(wi
+th in-ode[] id) from other
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--148
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--148
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--159
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--159
+
+ []
+
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 191--198
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--201
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 1226) in paragraph at lines 204--206
+\OT1/ppl/m/n/10.95 Assume fol-low-ing path ex-ist /U/V/W/X [U,V,W,X are di-rec-
+to-ries, we are per-form-ing
+ []
+
+[30]
+Overfull \hbox (117.68149pt too wide) has occurred while \output is active
+\OT1/ppl/m/sl/10.95 5.6.  LOGGING, REMOVING LOGS AND DELETING INODES WHICH ARE 
+NOT REFERRED BY ANY SNAPSHOT \OT1/ppl/m/n/10.95 31
+ []
+
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 228--235
+
+ []
+
+[32]
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 239.
+
  (/usr/share/texmf-texlive/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 65.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 239.
+
+Underfull \hbox (badness 10000) in paragraph at lines 242--246
+
+ []
 
 
-LaTeX Warning: Citation `isotc37sc4:dcr' on page 24 undefined on input line 78.
+Underfull \hbox (badness 10000) in paragraph at lines 247--248
+
+ []
+
+<figs/preliminar/Approach2.png, id=650, 669.50125pt x 254.9525pt>
+File: figs/preliminar/Approach2.png Graphic file (type png)
+
+<use figs/preliminar/Approach2.png>
+Overfull \hbox (80.35765pt too wide) in paragraph at lines 251--252
+ [][] 
+ []
 
 
-) (./RO_RootLevel_Single_Snapshot_problem_Definition.tex [24]
-Chapter 4.
-[25
-
-]
-
-LaTeX Warning: Citation `isotc37sc4:dcr' on page 26 undefined on input line 78.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-) [26] [27
+Overfull \hbox (117.68149pt too wide) has occurred while \output is active
+\OT1/ppl/m/sl/10.95 5.6.  LOGGING, REMOVING LOGS AND DELETING INODES WHICH ARE 
+NOT REFERRED BY ANY SNAPSHOT \OT1/ppl/m/n/10.95 33
+ []
 
-] [28] [29
-
-] (./RO_Nested_Snapshots_Solution.tex [30
-
-]
-Chapter 5.
-[31]
-
-LaTeX Warning: Citation `isotc37sc4:dcr' on page 32 undefined on input line 78.
-
-
-) (./RO_RootLevel_Single_Snapshot_Solution.tex [32]
+[33]) (./RO_RootLevel_Single_Snapshot_Solution.tex [34 <./figs/preliminar/Appro
+ach2.png (PNG copy)>]
 Chapter 6.
-[33
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--55
+
+ []
+
+
+Overfull \hbox (50.32988pt too wide) in paragraph at lines 45--55
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--55
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--67
+
+ []
+
+
+Overfull \hbox (50.32988pt too wide) in paragraph at lines 55--67
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--67
+
+ []
+
+[35
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 73--85
 
-LaTeX Warning: Citation `isotc37sc4:dcr' on page 34 undefined on input line 78.
+ []
 
 
-) [34] [35
+Overfull \hbox (50.32988pt too wide) in paragraph at lines 73--85
+[] 
+ []
 
-] [36] [37
 
-] (./5100-omnis-voluptas.tex [38
+Underfull \hbox (badness 10000) in paragraph at lines 73--85
 
-]
-Chapter 7.
-[39]) (./7200-magna-aliqua.tex [40]
-Chapter 8.
-[41
+ []
 
-]) (./document.bbl [42]
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 14.
+[36]
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 98.
  (/usr/share/texmf-texlive/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Underfull \hbox (badness 1019) in paragraph at lines 27--30
+Overfull \hbox (45.17041pt too wide) in paragraph at lines 151--151
+ []                \OT1/pcr/m/n/10.95 //This node is already marked deleted, so
+ nothing to do.[] 
+ []
+
+
+Overfull \hbox (202.85022pt too wide) in paragraph at lines 151--151
+ []             \OT1/pcr/m/n/10.95 * This Inode can be a directory or file also
+ it can be new or modified or original.[] 
+ []
+
+
+Overfull \hbox (25.46043pt too wide) in paragraph at lines 151--151
+ []                \OT1/pcr/m/n/10.95 children = ((INodeDirectory) tempNode).ge
+tChildren();[] 
+ []
+
+
+Overfull \hbox (18.89044pt too wide) in paragraph at lines 151--151
+ []                    \OT1/pcr/m/n/10.95 if(tempNode.getStatus()==SnapShotCons
+tants.New){[] 
+ []
+
+[37]
+Overfull \hbox (150.29028pt too wide) in paragraph at lines 151--151
+ []                        \OT1/pcr/m/n/10.95 tempNode.setIsDeletedNoPersistanc
+e(SnapShotConstants.isDeleted);[] 
+ []
+
+
+Overfull \hbox (170.00026pt too wide) in paragraph at lines 151--151
+ []            \OT1/pcr/m/n/10.95 } else if (tempNode instanceof INodeFile || t
+empNode instanceof INodeSymlink) {[] 
+ []
+
+
+Overfull \hbox (294.83011pt too wide) in paragraph at lines 151--151
+ []                    \OT1/pcr/m/n/10.95 //We can delete this file permanently
+ and update the ansectors about changes in the quota.[] 
+ []
+
+
+Overfull \hbox (84.59036pt too wide) in paragraph at lines 151--151
+ []                    \OT1/pcr/m/n/10.95 //Remove the blocks associated with t
+his file permanently.[] 
+ []
+
+
+Overfull \hbox (281.69012pt too wide) in paragraph at lines 151--151
+ []                \OT1/pcr/m/n/10.95 } else if (tempSts == SnapShotConstants.O
+riginal || tempSts == SnapShotConstants.Modified) {[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--174
+
+ []
+
+[38]) [39] [40
+
+] [41] [42] (./RO_Nested_Snapshots_Impl_and_eval.tex
+Chapter 7.
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--54
+
+ []
+
+
+Overfull \hbox (50.32988pt too wide) in paragraph at lines 44--54
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--54
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--66
+
+ []
+
+
+Overfull \hbox (50.32988pt too wide) in paragraph at lines 54--66
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--66
+
+ []
+
+[43
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 72--84
+
+ []
+
+
+Overfull \hbox (50.32988pt too wide) in paragraph at lines 72--84
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--84
+
+ []
+
+) (./RO_RootLevel_Single_Snapshot_Impl_and_eval.tex
+Overfull \hbox (9.97073pt too wide) has occurred while \output is active
+\OT1/ppl/m/n/10.95 44 \OT1/ppl/m/sl/10.95 CHAPTER 7.  READ-ONLY NESTED SNAPSHOT
+S IMPLEMENTATION AND EVALUATION
+ []
+
+[44]
+Chapter 8.
+
+Overfull \vbox (15.40207pt too high) detected at line 23
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
+[]\OT1/ppl/m/n/10.95 UnModified in-odes
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
+[]\OT1/ppl/m/n/10.95 UnModified in-odes
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
+[]\OT1/ppl/m/n/10.95 UnModified in-odes
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
+[]\OT1/ppl/m/n/10.95 UnModified in-odes
+ []
+
+) (./document.bbl [45
+
+]
+Overfull \hbox (71.14673pt too wide) has occurred while \output is active
+\OT1/ppl/m/n/10.95 46 \OT1/ppl/m/sl/10.95 CHAPTER 8.  READ-ONLY ROOT LEVEL SING
+LE SNAPSHOT IMPLEMENTATION AND EVALUATION
+ []
+
+[46]
+Underfull \hbox (badness 10000) in paragraph at lines 4--9
+\OT1/pcr/m/n/10.95 / / hadoop . apache . org / docs / r2 . 0 . 6-[]alpha / hado
+op-[]project-[]dist /
+ []
+
+
+Underfull \hbox (badness 1019) in paragraph at lines 40--43
 []\OT1/ppl/m/n/10.95 Foundation, A. S.  "apache zookeeper".  Ac-cessed Au-gust 
 2, 2014.[][]$\OT1/pcr/m/n/10.95 http : / /
  []
 
+[47
 
-Underfull \hbox (badness 5460) in paragraph at lines 58--64
+]
+Underfull \hbox (badness 5460) in paragraph at lines 71--77
 \OT1/ppl/m/n/10.95 struc-ture".  Ac-cessed Au-gust 2, 2014.[][]$\OT1/pcr/m/n/10
 .95 http : / / http : / / dev . mysql . com / doc /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--64
+Underfull \hbox (badness 10000) in paragraph at lines 71--77
 \OT1/pcr/m/n/10.95 mysqlclusterexcerpt / 5 . 1 / en / mysqlclusterlimitationstr
 ansactions .
  []
 
-[43
+) [48] [49
 
-]) [44] [45
-
-] [46] (./9100-commodo-consequat.texpdfTeX warning (ext4): destination with the
+] [50] (./9100-commodo-consequat.texpdfTeX warning (ext4): destination with the
  same identifier (name{chapter.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1048,19 +1440,19 @@ l.20 \chapter{Commodo Consequat}
 Appendix A.
 )
 No file document.ind.
-[47
+[51
 
-] [48
+] [52
 
 ] (./document.aux) ) 
 Here is how much of TeX's memory you used:
- 8227 strings out of 495061
- 116825 string characters out of 1182621
- 204018 words of memory out of 3000000
- 11003 multiletter control sequences out of 15000+50000
+ 8676 strings out of 493848
+ 123789 string characters out of 1152824
+ 214961 words of memory out of 3000000
+ 11482 multiletter control sequences out of 15000+50000
  25964 words of font info for 77 fonts, out of 3000000 for 9000
- 28 hyphenation exceptions out of 8191
- 45i,13n,38p,1802b,406s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 714 hyphenation exceptions out of 8191
+ 45i,13n,38p,1108b,496s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{algorithm.2} has been reference
 d but does not exist, replaced by a fixed one
 
@@ -1069,17 +1461,18 @@ pdfTeX warning (dest): name{algorithm.1} has been referenced but does not exist
 
 {/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texlive
 /fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type
-1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/ams
-fonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/euler
-/eurm10.pfb></usr/share/texmf-texlive/fonts/type1/public/hfbright/hfbr8.pfb></u
-sr/share/texmf-texlive/fonts/type1/public/hfbright/hfbrsl8.pfb></usr/share/texm
-f-texlive/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-texlive/fonts/ty
-pe1/urw/palatino/uplb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/palatino/
-uplr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/palatino/uplr8a.pfb></usr/
-share/texmf-texlive/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on document.pdf (68 pages, 551712 bytes).
+1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/type1/public/ams
+fonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cms
+y10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/euler/eurm10.pfb>
+</usr/share/texmf-texlive/fonts/type1/public/hfbright/hfbr8.pfb></usr/share/tex
+mf-texlive/fonts/type1/public/hfbright/hfbrsl8.pfb></usr/share/texmf-texlive/fo
+nts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/pala
+tino/uplb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/palatino/uplr8a.pfb><
+/usr/share/texmf-texlive/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-
+texlive/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on document.pdf (72 pages, 632039 bytes).
 PDF statistics:
- 754 PDF objects out of 1000 (max. 8388607)
- 164 named destinations out of 1000 (max. 500000)
- 474 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 882 PDF objects out of 1000 (max. 8388607)
+ 227 named destinations out of 1000 (max. 500000)
+ 492 words of extra memory for PDF output out of 10000 (max. 10000000)
 

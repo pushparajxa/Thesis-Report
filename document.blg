@@ -3,54 +3,57 @@ The top-level auxiliary file: document.aux
 The style file: chicago.bst
 Database file #1: document.bib
 Warning--I didn't find a database entry for "isotc37sc4:dcr"
+Warning--empty year in Hadoop2
 Warning--can't use both volume and number fields in 22
+Warning--empty year in Facebook
 Warning--empty year in 26
 Warning--empty year in 23
 Warning--empty year in 21
 Warning--empty year in 27
 Warning--empty year in 10
 Warning--empty year in mysql1
+Warning--empty year in clusterj
 Warning--empty year in 29
 Warning--empty year in 15
-You've used 14 entries,
+You've used 17 entries,
             2861 wiz_defined-function locations,
-            678 strings with 6630 characters,
-and the built_in function-call counts, 8055 in all, are:
-= -- 672
-> -- 555
+            692 strings with 7119 characters,
+and the built_in function-call counts, 9459 in all, are:
+= -- 795
+> -- 633
 < -- 3
-+ -- 156
-- -- 198
-* -- 584
-:= -- 1553
-add.period$ -- 43
-call.type$ -- 14
-change.case$ -- 94
-chr.to.int$ -- 11
-cite$ -- 23
-duplicate$ -- 245
-empty$ -- 484
-format.name$ -- 210
-if$ -- 1461
++ -- 174
+- -- 228
+* -- 662
+:= -- 1835
+add.period$ -- 52
+call.type$ -- 17
+change.case$ -- 112
+chr.to.int$ -- 14
+cite$ -- 29
+duplicate$ -- 290
+empty$ -- 574
+format.name$ -- 240
+if$ -- 1704
 int.to.chr$ -- 4
 int.to.str$ -- 0
 missing$ -- 5
-newline$ -- 73
-num.names$ -- 136
-pop$ -- 131
+newline$ -- 88
+num.names$ -- 166
+pop$ -- 167
 preamble$ -- 1
-purify$ -- 173
+purify$ -- 209
 quote$ -- 0
-skip$ -- 208
+skip$ -- 235
 stack$ -- 0
-substring$ -- 346
-swap$ -- 86
+substring$ -- 406
+swap$ -- 101
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 258
-warning$ -- 9
-while$ -- 133
+type$ -- 318
+warning$ -- 12
+while$ -- 163
 width$ -- 0
-write$ -- 183
-(There were 10 warnings)
+write$ -- 219
+(There were 13 warnings)
