@@ -88,6 +88,11 @@ Oracle-MySql.
   2014.\url{http://dev.mysql.com/doc/refman/5.5/en/mysql-cluster-overview.html%
 }.
 
+\bibitem[\protect\citeauthoryear{Russom}{Russom}{2011}]{TWDI-Report}
+Russom, P. (2011).
+\newblock Big data analytics.
+\newblock Technical report, TDWI Best Practices Report.
+
 \bibitem[\protect\citeauthoryear{Sajjad}{Sajjad}{2013}]{12}
 Sajjad, M. H. H. H.~P. (2013).
 \newblock "maintaining strong consistency semantics in a horizontally scalable

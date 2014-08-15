@@ -1,0 +1,56 @@
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -*- coding: utf-8; mode: latex -*- %%
+  %
+%%%%%                         CHAPTER
+ %%%
+  %
+
+% $Id: 1020-lorem-ipsum.tex,v 1.2 2009/06/19 15:51:46 david Exp $
+% $Log: 1020-lorem-ipsum.tex,v $
+% Revision 1.2  2009/06/19 15:51:46  david
+% *** empty log message ***
+%
+% Revision 1.1  2007/11/23 09:52:39  david
+% *** empty log message ***
+%
+%
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %
+%%%%%                           HEAD MATTER
+ %%%
+  %
+
+\chapter{Introduction}
+%\addcontentsline{lof}{chapter}{\thechapter\quad Lorem Ipsum}
+%\addcontentsline{lot}{chapter}{\thechapter\quad Lorem Ipsum}
+\label{ch:Introduction}
+
+The need to maintain and analyse a rapidly growing amount of data, which is often referred to as big data, is increasing vastly. Nowadays, not only the big internet companies such as Google, Facebook and Yahoo! are applying methods to analyse such data , but more and more enterprises at all. This trend was already underlined by a study from The Data Warehousing Institute (TDWI)  conducted across multiple sectors in 2011. The study \cite{TWDI-Report} revealed that 34\% of the surveyed companies were applying methods of big data analytics, whereas 70\% thought of big data as an opportunity. \\\\
+  A common approach to handle massive data sets is executing a distributed file system such as the Google File System (GFS)  or the Hadoop Distributed File System (HDFS)  on data centres with hundreds to thousands of nodes storing petabytes of data. Popular examples of such data centres are the ones from Google, Facebook and Yahoo! with respectively 1000 to 7000 , 3000  and 3500 nodes  providing storage capacities from 9.8 (Yahoo! ) to hundreds of petabytes (Facebook).\\\\
+Many a times users using those big data sets would like to run experiments or analysis which may overwrite or delete the existing data.One option is to save the data before running analytics, since the data size is very large it is not a feasible option. The underlying file system has to support features to snapshot the data which enables users to run experiments and roll back to previous state of data, if something does not work.\\\\
+Part 1 gives the background to Hadoop File System and other platforms which sets the context to understand the problem.
+Part 2 define the problem statement for Read-Only Nested Snapshots and Read-Only Root Level Snapshots. Part 3 explains the solutions problems defined in part-2. Part-4 gives the implementation and evaluation details of the solution given in Part-3.Finally, Part-5 discusses conclusion and future work.
+
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %
+%%%%%                      SECOND SECTION
+ %%%
+  %
+
+
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %
+%%%%%                          LAST SECTION
+ %%%
+  %
+ %%%
+%%%%%                        THE END
+  %
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "tese"
+%%% End: 

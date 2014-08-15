@@ -1,55 +1,61 @@
 \contentsline {part}{I\hspace {1em}Introduction}{1}{part.1}
-\contentsline {chapter}{\numberline {1}Apache Hadoop}{3}{chapter.1}
-\contentsline {section}{\numberline {1.1}Introduction}{3}{section.1.1}
-\contentsline {section}{\numberline {1.2}Hadoop File System(HDFS)}{3}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}HDFS Architecture}{4}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}HDFS NameNode}{4}{subsection.1.2.2}
-\contentsline {subsection}{\numberline {1.2.3}HDFS consistency model}{5}{subsection.1.2.3}
-\contentsline {subsection}{\numberline {1.2.4}POSIX compliant filesystem}{6}{subsection.1.2.4}
-\contentsline {chapter}{\numberline {2}Hadoop Open Platform as a service-HOP}{7}{chapter.2}
-\contentsline {section}{\numberline {2.1}Introduction}{7}{section.2.1}
-\contentsline {section}{\numberline {2.2}HOP-HDFS}{7}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}HOP-HDFS Architecture}{7}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}NameNode Operations}{10}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}HOP-HDFS Implementation}{11}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}MySQL Cluster}{12}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Concurrency Control in NDBCluster}{14}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}ClusterJ}{14}{subsection.2.3.2}
-\contentsline {part}{II\hspace {1em}Problem Definition}{17}{part.2}
-\contentsline {chapter}{\numberline {3}Read-Only Nested Snapshots-Problem Definition}{19}{chapter.3}
-\contentsline {section}{\numberline {3.1}UseCase Scenarios}{19}{section.3.1}
-\contentsline {section}{\numberline {3.2}Requirements and Operations to be supported}{20}{section.3.2}
-\contentsline {section}{\numberline {3.3}Related Work}{20}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Apache Hadoop Version 2}{20}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Hadoop at Facebook}{21}{subsection.3.3.2}
-\contentsline {chapter}{\numberline {4}Read-Only Root Level Single Snapshot-Problem Definition}{23}{chapter.4}
-\contentsline {section}{\numberline {4.1}Problem-Definition}{23}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Related Work}{23}{subsection.4.1.1}
-\contentsline {part}{III\hspace {1em}Solution}{25}{part.3}
-\contentsline {chapter}{\numberline {5}Read-Only Nested Snapshots}{27}{chapter.5}
-\contentsline {section}{\numberline {5.1}Snapshottable Directories}{27}{section.5.1}
-\contentsline {section}{\numberline {5.2}Modifications to the Schema}{27}{section.5.2}
-\contentsline {section}{\numberline {5.3}Rules for Operations}{30}{section.5.3}
-\contentsline {section}{\numberline {5.4}Listing children under a directory in a given Snapshot}{30}{section.5.4}
-\contentsline {section}{\numberline {5.5}Listing current children under a directory }{31}{section.5.5}
-\contentsline {section}{\numberline {5.6}Logging, Removing logs and Deleting inodes which are not referred by any snapshot}{32}{section.5.6}
-\contentsline {subsection}{\numberline {5.6.1}Approach 1:}{32}{subsection.5.6.1}
-\contentsline {subsubsection}{\numberline {5.6.1.1}When to Log}{32}{subsubsection.5.6.1.1}
-\contentsline {subsubsection}{\numberline {5.6.1.2}Logging modifications of files and blocks:}{33}{subsubsection.5.6.1.2}
-\contentsline {subsubsection}{\numberline {5.6.1.3}Deleting logs}{33}{subsubsection.5.6.1.3}
-\contentsline {subsubsection}{\numberline {5.6.1.4}Deletion of a file/or directory}{34}{subsubsection.5.6.1.4}
-\contentsline {subsubsection}{\numberline {5.6.1.5}Deleting entries in MovedPaths Table}{34}{subsubsection.5.6.1.5}
-\contentsline {subsection}{\numberline {5.6.2}Approach :2}{34}{subsection.5.6.2}
-\contentsline {subsubsection}{\numberline {5.6.2.1}\textbf {Cleaning the logs when a Snapshot is Deleted}}{34}{subsubsection.5.6.2.1}
-\contentsline {subsubsection}{\numberline {5.6.2.2}\textbf {Deleting an file/Inode}}{35}{subsubsection.5.6.2.2}
-\contentsline {subsubsection}{\numberline {5.6.2.3}\textbf {Handling the replication factor change of a file}}{36}{subsubsection.5.6.2.3}
-\contentsline {subsubsection}{\numberline {5.6.2.4}\textbf {Disadvantages:}}{36}{subsubsection.5.6.2.4}
-\contentsline {chapter}{\numberline {6}Read-Only Root Level Single Snapshot}{37}{chapter.6}
-\contentsline {section}{\numberline {6.1}Modifications to the Schema}{37}{section.6.1}
-\contentsline {section}{\numberline {6.2}Rules for Modifying the fileSystem meta-data}{38}{section.6.2}
-\contentsline {section}{\numberline {6.3}Roll Back}{41}{section.6.3}
-\contentsline {part}{IV\hspace {1em}Implementation and Evaluation}{43}{part.4}
-\contentsline {chapter}{\numberline {7}Read-Only Nested Snapshots Implementation and Evaluation}{45}{chapter.7}
-\contentsline {section}{\numberline {7.1}Benchmark for measuring query execution time}{45}{section.7.1}
-\contentsline {chapter}{\numberline {8}Read-Only Root Level Single Snapshot Implementation and Evaluation}{47}{chapter.8}
-\contentsline {section}{\numberline {8.1}Evaluation}{47}{section.8.1}
+\contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}
+\contentsline {chapter}{\numberline {2}Apache Hadoop}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Introduction}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Hadoop File System(HDFS)}{5}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}HDFS Architecture}{6}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}HDFS NameNode}{6}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}HDFS consistency model}{7}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}POSIX compliant filesystem}{8}{subsection.2.2.4}
+\contentsline {chapter}{\numberline {3}Hadoop Open Platform as a service-HOP}{9}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introduction}{9}{section.3.1}
+\contentsline {section}{\numberline {3.2}HOP-HDFS}{9}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}HOP-HDFS Architecture}{9}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}NameNode Operations}{12}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}HOP-HDFS Implementation}{13}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}MySQL Cluster}{14}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Concurrency Control in NDBCluster}{16}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}ClusterJ}{16}{subsection.3.3.2}
+\contentsline {part}{II\hspace {1em}Problem Definition}{19}{part.2}
+\contentsline {chapter}{\numberline {4}Read-Only Nested Snapshots-Problem Definition}{21}{chapter.4}
+\contentsline {section}{\numberline {4.1}UseCase Scenarios}{21}{section.4.1}
+\contentsline {section}{\numberline {4.2}Requirements and Operations to be supported}{22}{section.4.2}
+\contentsline {section}{\numberline {4.3}Related Work}{22}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Apache Hadoop Version 2}{22}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Hadoop at Facebook}{23}{subsection.4.3.2}
+\contentsline {chapter}{\numberline {5}Read-Only Root Level Single Snapshot-Problem Definition}{25}{chapter.5}
+\contentsline {section}{\numberline {5.1}Problem-Definition}{25}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Related Work}{25}{subsection.5.1.1}
+\contentsline {part}{III\hspace {1em}Solution}{27}{part.3}
+\contentsline {chapter}{\numberline {6}Read-Only Nested Snapshots}{29}{chapter.6}
+\contentsline {section}{\numberline {6.1}Snapshottable Directories}{29}{section.6.1}
+\contentsline {section}{\numberline {6.2}Modifications to the Schema}{29}{section.6.2}
+\contentsline {section}{\numberline {6.3}Rules for Operations}{32}{section.6.3}
+\contentsline {section}{\numberline {6.4}Listing children under a directory in a given Snapshot}{32}{section.6.4}
+\contentsline {section}{\numberline {6.5}Listing current children under a directory }{33}{section.6.5}
+\contentsline {section}{\numberline {6.6}Logging, Removing logs and Deleting inodes which are not referred by any snapshot}{34}{section.6.6}
+\contentsline {subsection}{\numberline {6.6.1}Approach 1:}{34}{subsection.6.6.1}
+\contentsline {subsubsection}{\numberline {6.6.1.1}When to Log}{34}{subsubsection.6.6.1.1}
+\contentsline {subsubsection}{\numberline {6.6.1.2}Logging modifications of files and blocks:}{35}{subsubsection.6.6.1.2}
+\contentsline {subsubsection}{\numberline {6.6.1.3}Deleting logs}{35}{subsubsection.6.6.1.3}
+\contentsline {subsubsection}{\numberline {6.6.1.4}Deletion of a file/or directory}{36}{subsubsection.6.6.1.4}
+\contentsline {subsubsection}{\numberline {6.6.1.5}Deleting entries in MovedPaths Table}{36}{subsubsection.6.6.1.5}
+\contentsline {subsection}{\numberline {6.6.2}Approach :2}{36}{subsection.6.6.2}
+\contentsline {subsubsection}{\numberline {6.6.2.1}\textbf {Cleaning the logs when a Snapshot is Deleted}}{36}{subsubsection.6.6.2.1}
+\contentsline {subsubsection}{\numberline {6.6.2.2}\textbf {Deleting an file/Inode}}{37}{subsubsection.6.6.2.2}
+\contentsline {subsubsection}{\numberline {6.6.2.3}\textbf {Handling the replication factor change of a file}}{38}{subsubsection.6.6.2.3}
+\contentsline {subsubsection}{\numberline {6.6.2.4}\textbf {Disadvantages:}}{38}{subsubsection.6.6.2.4}
+\contentsline {section}{\numberline {6.7}Length of file being Written}{38}{section.6.7}
+\contentsline {chapter}{\numberline {7}Read-Only Root Level Single Snapshot}{41}{chapter.7}
+\contentsline {section}{\numberline {7.1}Modifications to the Schema}{41}{section.7.1}
+\contentsline {section}{\numberline {7.2}Rules for Modifying the fileSystem meta-data}{42}{section.7.2}
+\contentsline {section}{\numberline {7.3}Roll Back}{45}{section.7.3}
+\contentsline {part}{IV\hspace {1em}Implementation and Evaluation}{47}{part.4}
+\contentsline {chapter}{\numberline {8}Read-Only Nested Snapshots Implementation and Evaluation}{49}{chapter.8}
+\contentsline {section}{\numberline {8.1}Benchmark for measuring query execution time}{49}{section.8.1}
+\contentsline {chapter}{\numberline {9}Read-Only Root Level Single Snapshot Implementation and Evaluation}{51}{chapter.9}
+\contentsline {section}{\numberline {9.1}Evaluation}{51}{section.9.1}
+\contentsline {part}{V\hspace {1em}Conclusions}{53}{part.5}
+\contentsline {chapter}{\numberline {10}Conclusions \& Future Work}{55}{chapter.10}
+\contentsline {section}{\numberline {10.1}Conclusions}{55}{section.10.1}
+\contentsline {section}{\numberline {10.2}Future Work}{55}{section.10.2}

@@ -15,45 +15,45 @@ Warning--empty year in clusterj
 Warning--empty year in 29
 Warning--empty year in 15
 Warning--empty year in Snapshot-ls
-You've used 18 entries,
+You've used 19 entries,
             2861 wiz_defined-function locations,
-            695 strings with 7254 characters,
-and the built_in function-call counts, 9927 in all, are:
-= -- 836
-> -- 659
+            701 strings with 7333 characters,
+and the built_in function-call counts, 10410 in all, are:
+= -- 878
+> -- 685
 < -- 3
-+ -- 180
-- -- 238
-* -- 688
-:= -- 1929
-add.period$ -- 55
-call.type$ -- 18
-change.case$ -- 118
-chr.to.int$ -- 15
-cite$ -- 31
-duplicate$ -- 305
-empty$ -- 604
-format.name$ -- 250
-if$ -- 1785
++ -- 186
+- -- 248
+* -- 717
+:= -- 2028
+add.period$ -- 58
+call.type$ -- 19
+change.case$ -- 125
+chr.to.int$ -- 16
+cite$ -- 32
+duplicate$ -- 321
+empty$ -- 636
+format.name$ -- 260
+if$ -- 1869
 int.to.chr$ -- 4
 int.to.str$ -- 0
 missing$ -- 5
-newline$ -- 93
-num.names$ -- 176
-pop$ -- 179
+newline$ -- 98
+num.names$ -- 186
+pop$ -- 183
 preamble$ -- 1
-purify$ -- 221
+purify$ -- 233
 quote$ -- 0
-skip$ -- 244
+skip$ -- 261
 stack$ -- 0
-substring$ -- 426
-swap$ -- 106
+substring$ -- 446
+swap$ -- 110
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 338
+type$ -- 358
 warning$ -- 13
-while$ -- 173
+while$ -- 183
 width$ -- 0
-write$ -- 231
+write$ -- 245
 (There were 13 warnings)

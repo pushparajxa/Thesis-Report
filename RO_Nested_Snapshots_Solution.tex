@@ -233,7 +233,7 @@ void ls_current(int id){
 \end{verbatim}
 
 \section{Logging, Removing logs and Deleting inodes which are not referred by any snapshot}
-
+\label{loggingApproaches}
 Here two approaches two solve the issues are presented.
 \subsection{Approach 1:}
 \textbf{Columns to be added to Inodes Table}\\
@@ -316,6 +316,35 @@ We find value 2 in Inodes’ table. The replication factor= Max(Current value, M
 
 \subsubsection{\textbf{Disadvantages:}}
 1. Time for taking snapshot is O(n) where n is the number of descendants  in directory 
+
+\section{Length of file being Written}
+This section explains the case when snapshot was taken while writing to file is in progress.In HDFS file System metadata and actual data are separated and store at different places.Various options to know the length of the file are:
+\begin{enumerate}
+ \item Length of all completed/finalized blocks and zero length considered from block under
+construction.
+\item Length when block is closed after snapshot creation occurred.
+\item Length as seen at or around the time of snapshot creation in NameNode.
+\begin{itemize}
+ \item Either, DataNode reports the length in heartbeat or other commands
+\item  Or, NameNode queries the length
+\end{itemize}
+
+\item Namenode and Datanodes could have communication to establish the snapshot length after
+snapshot command is received by the namenode. But this is very complicated to implement
+because of the distributed nature and the failure modes.
+\item Client that care about the length of a file being written, could update length to the namenode as part of hflush/hsync. This is the length that gets recorded in the snapshot.
+\item “Precise length” of the file at the time of snapshot creation.
+
+\end{enumerate}
+
+Clearly (6) is not possible given namespace and data block storage separation. Any guarantees in this regard will not be useful for the application, given that an application will need this consistency across many files that are part of the snapshot. \\
+(1) Does not capture any changes that has occurred in the file from the time of new
+block creation to the time of snapshot command. This is a good choice only if an application is willing to close the files before creating snapshots. That means application must have control over the data being written to the files and also snapshot creation. This may not be useful for HBase.\\
+(2) will not be acceptable for many applications. Some reasons being - a file could be slowly written to and may not close for a long time. What is the length of such files in snapshot? Secondly, length of the file changes post snapshot - what guarantee is HDFS providing in terms of snapshot creation time?\\
+(5)has the advantage that only applications that care about the correct length to be recorded in a snapshot use the hflush/hsync operation to report the length to the NN.
+
+In both Read only Root Level Snapshot and Read only Nested Snapshots, (5) is chosen to implement.\\
+
 
 
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -1,55 +1,61 @@
 \BOOKMARK [-1][]{part.1}{I Introduction}{}
-\BOOKMARK [0][]{chapter.1}{Apache Hadoop}{part.1}
-\BOOKMARK [1][]{section.1.1}{Introduction}{chapter.1}
-\BOOKMARK [1][]{section.1.2}{Hadoop File System\(HDFS\)}{chapter.1}
-\BOOKMARK [2][]{subsection.1.2.1}{HDFS Architecture}{section.1.2}
-\BOOKMARK [2][]{subsection.1.2.2}{HDFS NameNode}{section.1.2}
-\BOOKMARK [2][]{subsection.1.2.3}{HDFS consistency model}{section.1.2}
-\BOOKMARK [2][]{subsection.1.2.4}{POSIX compliant filesystem}{section.1.2}
-\BOOKMARK [0][]{chapter.2}{Hadoop Open Platform as a service-HOP}{part.1}
+\BOOKMARK [0][]{chapter.1}{Introduction}{part.1}
+\BOOKMARK [0][]{chapter.2}{Apache Hadoop}{part.1}
 \BOOKMARK [1][]{section.2.1}{Introduction}{chapter.2}
-\BOOKMARK [1][]{section.2.2}{HOP-HDFS}{chapter.2}
-\BOOKMARK [2][]{subsection.2.2.1}{HOP-HDFS Architecture}{section.2.2}
-\BOOKMARK [2][]{subsection.2.2.2}{NameNode Operations}{section.2.2}
-\BOOKMARK [2][]{subsection.2.2.3}{HOP-HDFS Implementation}{section.2.2}
-\BOOKMARK [1][]{section.2.3}{MySQL Cluster}{chapter.2}
-\BOOKMARK [2][]{subsection.2.3.1}{Concurrency Control in NDBCluster}{section.2.3}
-\BOOKMARK [2][]{subsection.2.3.2}{ClusterJ}{section.2.3}
+\BOOKMARK [1][]{section.2.2}{Hadoop File System\(HDFS\)}{chapter.2}
+\BOOKMARK [2][]{subsection.2.2.1}{HDFS Architecture}{section.2.2}
+\BOOKMARK [2][]{subsection.2.2.2}{HDFS NameNode}{section.2.2}
+\BOOKMARK [2][]{subsection.2.2.3}{HDFS consistency model}{section.2.2}
+\BOOKMARK [2][]{subsection.2.2.4}{POSIX compliant filesystem}{section.2.2}
+\BOOKMARK [0][]{chapter.3}{Hadoop Open Platform as a service-HOP}{part.1}
+\BOOKMARK [1][]{section.3.1}{Introduction}{chapter.3}
+\BOOKMARK [1][]{section.3.2}{HOP-HDFS}{chapter.3}
+\BOOKMARK [2][]{subsection.3.2.1}{HOP-HDFS Architecture}{section.3.2}
+\BOOKMARK [2][]{subsection.3.2.2}{NameNode Operations}{section.3.2}
+\BOOKMARK [2][]{subsection.3.2.3}{HOP-HDFS Implementation}{section.3.2}
+\BOOKMARK [1][]{section.3.3}{MySQL Cluster}{chapter.3}
+\BOOKMARK [2][]{subsection.3.3.1}{Concurrency Control in NDBCluster}{section.3.3}
+\BOOKMARK [2][]{subsection.3.3.2}{ClusterJ}{section.3.3}
 \BOOKMARK [-1][]{part.2}{II Problem Definition}{}
-\BOOKMARK [0][]{chapter.3}{Read-Only Nested Snapshots-Problem Definition}{part.2}
-\BOOKMARK [1][]{section.3.1}{UseCase Scenarios}{chapter.3}
-\BOOKMARK [1][]{section.3.2}{Requirements and Operations to be supported}{chapter.3}
-\BOOKMARK [1][]{section.3.3}{Related Work}{chapter.3}
-\BOOKMARK [2][]{subsection.3.3.1}{Apache Hadoop Version 2}{section.3.3}
-\BOOKMARK [2][]{subsection.3.3.2}{Hadoop at Facebook}{section.3.3}
-\BOOKMARK [0][]{chapter.4}{Read-Only Root Level Single Snapshot-Problem Definition}{part.2}
-\BOOKMARK [1][]{section.4.1}{Problem-Definition}{chapter.4}
-\BOOKMARK [2][]{subsection.4.1.1}{Related Work}{section.4.1}
+\BOOKMARK [0][]{chapter.4}{Read-Only Nested Snapshots-Problem Definition}{part.2}
+\BOOKMARK [1][]{section.4.1}{UseCase Scenarios}{chapter.4}
+\BOOKMARK [1][]{section.4.2}{Requirements and Operations to be supported}{chapter.4}
+\BOOKMARK [1][]{section.4.3}{Related Work}{chapter.4}
+\BOOKMARK [2][]{subsection.4.3.1}{Apache Hadoop Version 2}{section.4.3}
+\BOOKMARK [2][]{subsection.4.3.2}{Hadoop at Facebook}{section.4.3}
+\BOOKMARK [0][]{chapter.5}{Read-Only Root Level Single Snapshot-Problem Definition}{part.2}
+\BOOKMARK [1][]{section.5.1}{Problem-Definition}{chapter.5}
+\BOOKMARK [2][]{subsection.5.1.1}{Related Work}{section.5.1}
 \BOOKMARK [-1][]{part.3}{III Solution}{}
-\BOOKMARK [0][]{chapter.5}{Read-Only Nested Snapshots}{part.3}
-\BOOKMARK [1][]{section.5.1}{Snapshottable Directories}{chapter.5}
-\BOOKMARK [1][]{section.5.2}{Modifications to the Schema}{chapter.5}
-\BOOKMARK [1][]{section.5.3}{Rules for Operations}{chapter.5}
-\BOOKMARK [1][]{section.5.4}{Listing children under a directory in a given Snapshot}{chapter.5}
-\BOOKMARK [1][]{section.5.5}{Listing current children under a directory }{chapter.5}
-\BOOKMARK [1][]{section.5.6}{Logging, Removing logs and Deleting inodes which are not referred by any snapshot}{chapter.5}
-\BOOKMARK [2][]{subsection.5.6.1}{Approach 1:}{section.5.6}
-\BOOKMARK [3][]{subsubsection.5.6.1.1}{When to Log}{subsection.5.6.1}
-\BOOKMARK [3][]{subsubsection.5.6.1.2}{Logging modifications of files and blocks:}{subsection.5.6.1}
-\BOOKMARK [3][]{subsubsection.5.6.1.3}{Deleting logs}{subsection.5.6.1}
-\BOOKMARK [3][]{subsubsection.5.6.1.4}{Deletion of a file/or directory}{subsection.5.6.1}
-\BOOKMARK [3][]{subsubsection.5.6.1.5}{Deleting entries in MovedPaths Table}{subsection.5.6.1}
-\BOOKMARK [2][]{subsection.5.6.2}{Approach :2}{section.5.6}
-\BOOKMARK [3][]{subsubsection.5.6.2.1}{Cleaning the logs when a Snapshot is Deleted}{subsection.5.6.2}
-\BOOKMARK [3][]{subsubsection.5.6.2.2}{Deleting an file/Inode}{subsection.5.6.2}
-\BOOKMARK [3][]{subsubsection.5.6.2.3}{Handling the replication factor change of a file}{subsection.5.6.2}
-\BOOKMARK [3][]{subsubsection.5.6.2.4}{Disadvantages:}{subsection.5.6.2}
-\BOOKMARK [0][]{chapter.6}{Read-Only Root Level Single Snapshot}{part.3}
-\BOOKMARK [1][]{section.6.1}{Modifications to the Schema}{chapter.6}
-\BOOKMARK [1][]{section.6.2}{Rules for Modifying the fileSystem meta-data}{chapter.6}
-\BOOKMARK [1][]{section.6.3}{Roll Back}{chapter.6}
+\BOOKMARK [0][]{chapter.6}{Read-Only Nested Snapshots}{part.3}
+\BOOKMARK [1][]{section.6.1}{Snapshottable Directories}{chapter.6}
+\BOOKMARK [1][]{section.6.2}{Modifications to the Schema}{chapter.6}
+\BOOKMARK [1][]{section.6.3}{Rules for Operations}{chapter.6}
+\BOOKMARK [1][]{section.6.4}{Listing children under a directory in a given Snapshot}{chapter.6}
+\BOOKMARK [1][]{section.6.5}{Listing current children under a directory }{chapter.6}
+\BOOKMARK [1][]{section.6.6}{Logging, Removing logs and Deleting inodes which are not referred by any snapshot}{chapter.6}
+\BOOKMARK [2][]{subsection.6.6.1}{Approach 1:}{section.6.6}
+\BOOKMARK [3][]{subsubsection.6.6.1.1}{When to Log}{subsection.6.6.1}
+\BOOKMARK [3][]{subsubsection.6.6.1.2}{Logging modifications of files and blocks:}{subsection.6.6.1}
+\BOOKMARK [3][]{subsubsection.6.6.1.3}{Deleting logs}{subsection.6.6.1}
+\BOOKMARK [3][]{subsubsection.6.6.1.4}{Deletion of a file/or directory}{subsection.6.6.1}
+\BOOKMARK [3][]{subsubsection.6.6.1.5}{Deleting entries in MovedPaths Table}{subsection.6.6.1}
+\BOOKMARK [2][]{subsection.6.6.2}{Approach :2}{section.6.6}
+\BOOKMARK [3][]{subsubsection.6.6.2.1}{Cleaning the logs when a Snapshot is Deleted}{subsection.6.6.2}
+\BOOKMARK [3][]{subsubsection.6.6.2.2}{Deleting an file/Inode}{subsection.6.6.2}
+\BOOKMARK [3][]{subsubsection.6.6.2.3}{Handling the replication factor change of a file}{subsection.6.6.2}
+\BOOKMARK [3][]{subsubsection.6.6.2.4}{Disadvantages:}{subsection.6.6.2}
+\BOOKMARK [1][]{section.6.7}{Length of file being Written}{chapter.6}
+\BOOKMARK [0][]{chapter.7}{Read-Only Root Level Single Snapshot}{part.3}
+\BOOKMARK [1][]{section.7.1}{Modifications to the Schema}{chapter.7}
+\BOOKMARK [1][]{section.7.2}{Rules for Modifying the fileSystem meta-data}{chapter.7}
+\BOOKMARK [1][]{section.7.3}{Roll Back}{chapter.7}
 \BOOKMARK [-1][]{part.4}{IV Implementation and Evaluation}{}
-\BOOKMARK [0][]{chapter.7}{Read-Only Nested Snapshots Implementation and Evaluation}{part.4}
-\BOOKMARK [1][]{section.7.1}{Benchmark for measuring query execution time}{chapter.7}
-\BOOKMARK [0][]{chapter.8}{Read-Only Root Level Single Snapshot Implementation and Evaluation}{part.4}
-\BOOKMARK [1][]{section.8.1}{Evaluation}{chapter.8}
+\BOOKMARK [0][]{chapter.8}{Read-Only Nested Snapshots Implementation and Evaluation}{part.4}
+\BOOKMARK [1][]{section.8.1}{Benchmark for measuring query execution time}{chapter.8}
+\BOOKMARK [0][]{chapter.9}{Read-Only Root Level Single Snapshot Implementation and Evaluation}{part.4}
+\BOOKMARK [1][]{section.9.1}{Evaluation}{chapter.9}
+\BOOKMARK [-1][]{part.5}{V Conclusions}{}
+\BOOKMARK [0][]{chapter.10}{Conclusions \046 Future Work}{part.5}
+\BOOKMARK [1][]{section.10.1}{Conclusions}{chapter.10}
+\BOOKMARK [1][]{section.10.2}{Future Work}{chapter.10}
