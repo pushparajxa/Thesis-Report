@@ -99,6 +99,12 @@ SICS.
 \newblock "swedish ict sics".
 \newblock Accessed August 2, 2014.\url{http://www.sics.se}.
 
+\bibitem[\protect\citeauthoryear{Snapshot-ls}{Snapshot-ls}{}]{Snapshot-ls}
+Snapshot-ls.
+\newblock "list subtree in a snapshot".
+\newblock Accessed August 2, 2014.\url
+  {https://github.com/pushparajxa/Snapshots/blob/master/Final_Short.sql}.
+
 \bibitem[\protect\citeauthoryear{White}{White}{2009}]{h17}
 White, T. (2009).
 \newblock {\em Hadoop: The Definitive Guide}.

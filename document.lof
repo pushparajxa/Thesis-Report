@@ -1,17 +1,16 @@
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces HDFS Architecture.\relax }}{7}{figure.caption.12}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces HDFS Architecture.\relax }}{5}{figure.caption.11}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces HOP-HDFS Table relations.\relax }}{11}{figure.caption.13}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces HOP-HDFS Schema\relax }}{12}{figure.caption.14}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces MySQL cluster\relax }}{16}{figure.caption.16}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Node groups of MySQL cluster\relax }}{17}{figure.caption.17}
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Deletion of Snapshot\relax }}{34}{figure.caption.19}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces HOP-HDFS Table relations.\relax }}{9}{figure.caption.12}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces HOP-HDFS Schema\relax }}{10}{figure.caption.13}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces MySQL cluster\relax }}{14}{figure.caption.15}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Node groups of MySQL cluster\relax }}{15}{figure.caption.16}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Deletion of Snapshot\relax }}{35}{figure.caption.18}
 \addvspace {10\p@ }
-\contentsline {chapter}{A\hskip 1em\relax Commodo Consequat}{51}{chapter.1}
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Soluta nobis est eligendi optio.\relax }}{51}{figure.caption.23}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Benchmark on Single Directory\relax }}{46}{figure.caption.19}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Benchmark on Single Directory Graph\relax }}{46}{figure.caption.20}
+\addvspace {10\p@ }

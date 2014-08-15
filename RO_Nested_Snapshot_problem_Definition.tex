@@ -80,9 +80,13 @@ attributes of file or directory cannot be changed. The snapshots are truly read-
 \section{Related Work}
 
 \subsection{Apache Hadoop Version 2}
-\cite{Hadoop2}
+Apache Hadoop implemented snapshots in their latest version \cite{Hadoop2} , which supports nested snapshots and constant time for the creation of snapshots. Since metadata and data are separated it supports string consistency for metadata snapshot but not for data.In case of file being written, unless the datanode notifies the namenode or client notifies namenode of latest length of last block via hsync, namenode is unaware of current length of the file when snapshot was being taken.The solution also couldn't address the case of replication change of half-filled last block after taking snapshot, where it is appended after taking snapshot.
+
 \subsection{Hadoop at Facebook}
-\cite{Facebook}
+Facebook has implemented a solution to Snapshots \cite{Facebook}. The solution scales linearly with the number of inodes(file or directories) in the filesystem.It uses a selective copy-on-append scheme that minimizes the number of copy-on-write operations. This optimization is made possible by taking advantage of the restricted interface exposed by HDFS, which limits the write operations to appends and truncates only.The solution has space overhead since Whenever a snap-
+shot is taken, a node is created in the snapshot tree  that keeps track of all the files in the
+namespace by maintaining a list of its blocks IDs along with their unique generation timestamps.
+If a snapshot was taken while file is being written, after the write is finished and data node notifies namenode, it saves the location of the file from  where it started writing not exactly saving the location in file when snapshot was taken.
 
 
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

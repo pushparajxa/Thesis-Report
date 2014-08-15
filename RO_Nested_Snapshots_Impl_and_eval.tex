@@ -24,11 +24,32 @@
 %\addcontentsline{lof}{chapter}{\thechapter\quad Lorem Ipsum}
 %\addcontentsline{lot}{chapter}{\thechapter\quad Lorem Ipsum}
 \label{ch:RORLSSIE}
-Following conditions are applied to the solution
+The algorithm to list subtree of directory at a given snapshot was implemented in SQl and executed against MySql NDB cluster. 
+\section{Benchmark for measuring query execution time}
+In this benchmark, a single directory with 1,000,000 files is used as test directory. Snapshot is taken when vector clock is 5000 i.e after completion 5000 operation. Following operations are executed on the test directory.
 \begin{enumerate}
-\item Creation of directories with Quota, either name-space quota or disk-space quota is not allowed.
-\item Each file consists of blocks. Each blocks-size is typically 64 MB but can be set to any value.Blocks should be written completely.
+\item \textbf{ADD :} Adding new files to the directory
+\item \textbf{DEL:} Deleting exisiting files in the directory
+\item \textbf{RENAME:} Renaming exisiting files in the directory
+\item \textbf{MOV:} Moving file from this directory to another directory.
+\item \textbf{MOV\_ IN:} Moving back the files that were moved out in MOV operation.
+\item \textbf{Time:} Time taken for executing listing files in the directory at snapshot taken at time 5000.
+These measurements are taken on ndb cluster while the query executed at MySql server instead of clusterj.
 \end{enumerate}
+\begin{figure}[tbh]
+\centering  
+ \includegraphics[scale=0.8]{figs/preliminar/Benchmark1.png}
+  \caption{Benchmark on Single Directory}
+  \label{fig:Benchmark1}
+\end{figure}
+\begin{figure}[tbh]
+\centering  
+ \includegraphics[scale=0.5]{figs/preliminar/benchmark_graph2.png}
+  \caption{Benchmark on Single Directory Graph}
+  \label{fig:benchmark_graph2}
+\end{figure}
+
+The benchmark shows that the execution time scales linearly with the number of operations.
 
 
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -37,51 +58,6 @@ Following conditions are applied to the solution
  %%%
   %
 
-\section{Modifications to the Schema}
-
-Following columns need to be added to the Inodes table described in the schema \ref{fig:HDFS_table_schema} of HOP File System.
-\begin{enumerate}
-\item isDeleted \\\\
-\begin{tabular}{|c|p{15cm}|}
-\hline
-Value&Summary\\
-\hline
-0&Indicates that this Inode is not deleted.\\
-\hline
-1&Indicates that this Inode deleted after Root Level snapshot was taken.\\ 
-\hline
-\end{tabular} \\
-\item status \\\\
-\begin{tabular}{|c|p{15cm}|}
-\hline
-Value&Summary\\
-\hline
-0&Indicates that this Inode was created before taking Root Level Snapshot.\\
-\hline
-2&Indicates that this Inode created before taking Root Level snapshot but modified after that.\\ 
-\hline
-3&Indicates that this Inode was created after taking Root Level snapshot.\\ 
-\hline
-\end{tabular} \\
-
-\end{enumerate}
-\pagebreak
-
-Following Columns should be added to BlockInfos table described in the schema \ref{fig:HDFS_table_schema}.
-\begin{enumerate}
-\item status \\\\
-\begin{tabular}{|c|p{15cm}|}
-\hline
-Value&Summary\\
-\hline
-0&Indicates that this Block was created before taking Root Level Snapshot.\\
-\hline
-2&Indicates that this Block created before taking Root Level snapshot but modified after that.\\ 
-\hline
-3&Indicates that this Block was created after taking Root Level snapshot.\\ 
-\hline
-\end{tabular} \\
-\end{enumerate}
 
 
 

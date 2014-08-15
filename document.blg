@@ -2,7 +2,6 @@ This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
 The top-level auxiliary file: document.aux
 The style file: chicago.bst
 Database file #1: document.bib
-Warning--I didn't find a database entry for "isotc37sc4:dcr"
 Warning--empty year in Hadoop2
 Warning--can't use both volume and number fields in 22
 Warning--empty year in Facebook
@@ -15,45 +14,46 @@ Warning--empty year in mysql1
 Warning--empty year in clusterj
 Warning--empty year in 29
 Warning--empty year in 15
-You've used 17 entries,
+Warning--empty year in Snapshot-ls
+You've used 18 entries,
             2861 wiz_defined-function locations,
-            692 strings with 7119 characters,
-and the built_in function-call counts, 9459 in all, are:
-= -- 795
-> -- 633
+            695 strings with 7254 characters,
+and the built_in function-call counts, 9927 in all, are:
+= -- 836
+> -- 659
 < -- 3
-+ -- 174
-- -- 228
-* -- 662
-:= -- 1835
-add.period$ -- 52
-call.type$ -- 17
-change.case$ -- 112
-chr.to.int$ -- 14
-cite$ -- 29
-duplicate$ -- 290
-empty$ -- 574
-format.name$ -- 240
-if$ -- 1704
++ -- 180
+- -- 238
+* -- 688
+:= -- 1929
+add.period$ -- 55
+call.type$ -- 18
+change.case$ -- 118
+chr.to.int$ -- 15
+cite$ -- 31
+duplicate$ -- 305
+empty$ -- 604
+format.name$ -- 250
+if$ -- 1785
 int.to.chr$ -- 4
 int.to.str$ -- 0
 missing$ -- 5
-newline$ -- 88
-num.names$ -- 166
-pop$ -- 167
+newline$ -- 93
+num.names$ -- 176
+pop$ -- 179
 preamble$ -- 1
-purify$ -- 209
+purify$ -- 221
 quote$ -- 0
-skip$ -- 235
+skip$ -- 244
 stack$ -- 0
-substring$ -- 406
-swap$ -- 101
+substring$ -- 426
+swap$ -- 106
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 318
-warning$ -- 12
-while$ -- 163
+type$ -- 338
+warning$ -- 13
+while$ -- 173
 width$ -- 0
-write$ -- 219
+write$ -- 231
 (There were 13 warnings)

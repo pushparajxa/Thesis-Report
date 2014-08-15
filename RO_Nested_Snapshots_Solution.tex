@@ -176,9 +176,61 @@ When an directory is deleted, first we will check  whether it is in a snapshot[e
 \end{enumerate}
 
 \section{Listing children under a directory in a given Snapshot}
+To get the subtree under a directory at a particular snapshot, we use the following pseduo algorithm called with directory id and the time at which snapshot was taken. The algorithm presented here gives a general idea, the implementation in sql\cite{Snapshot-ls} addresses/solves the fine grained issues, for example, inode created after snapshot, moved, then moved-in, like those cases.
+
+\begin{verbatim}
+void ls_at_snapshot(int id, int stime){
+
+    children={Get children whose parentId=id};
+    children = childen - { children deleted before stime} -{ children created after stime} 
+                        - {children moved_in 	after stime};
+    children = children + {children moved-out after stime};
+    modifiedChildren = { children modified after stime};
+
+    for(child chd : children){
+    	    child inode;
+        if(modifiedChildren.contains(chd)){
+            modChd = modifiedChildren.get(chd.getId());
+            if(chd.movedTime>modChd.modifiedTime){
+                #This child modified first then moved.So return the row stored M-List with modChd.modifiedTime
+                inode = modChd;             
+            }
+            else{
+               inode = chd;.
+            }
+    	   }
+    	   else{
+    	         inode = chd;
+    	   }
+    	   
+    	   if(inode is directory){
+    	        ls+at_snapshot(inode.getId(),stime);
+    	   }
+    	   else{
+    	       print(inode);
+    	   }
+    }
+}
+
+\end{verbatim}
 
 \section{Listing current children under a directory }
+For listing current subtree under a directory, we select children which are not deleted.\\
+\begin{verbatim}
+void ls_current(int id){
+    children={Get children whose parentId=id};
+    children = childen - { children isDeleted=1}; 
 
+    for(child chd : children){
+    	    if(inode is directory){
+    	        ls_current(inode.getId());
+    	   }
+    	   else{
+    	       print(inode);
+    	   }
+    }
+}
+\end{verbatim}
 
 \section{Logging, Removing logs and Deleting inodes which are not referred by any snapshot}
 
