@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.8.6)  16 AUG 2014 02:24
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.8.6)  16 AUG 2014 02:27
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -900,35 +900,32 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.71  \subsection
+l.66  \subsection
                  {HDFS Architecture} [5]
-<figs/preliminar/HDFS_Architecture.png, id=450, 960.58875pt x 599.23875pt>
+<figs/preliminar/HDFS_Architecture.png, id=449, 960.58875pt x 599.23875pt>
 File: figs/preliminar/HDFS_Architecture.png Graphic file (type png)
 
 <use figs/preliminar/HDFS_Architecture.png>
-Overfull \hbox (25.04912pt too wide) in paragraph at lines 82--83
+Overfull \hbox (25.04912pt too wide) in paragraph at lines 77--78
  [][] 
  []
-
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 101.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.136 \item \textbf
-                   {Primitive NameNode Operations}\\ [6]pdfTeX warning (ext4): 
-destination with the same identifier (name{page.7}) has been already used, dupl
-icate ignored
+l.94 
+      [6 <./figs/preliminar/HDFS_Architecture.png>]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 96.
+pdfTeX warning (ext4): destination with the same identifier (name{page.7}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.146 
-       [7 <./figs/preliminar/HDFS_Architecture.png>]) (./HOP.texpdfTeX warning 
-(ext4): destination with the same identifier (name{page.8}) has been already us
-ed, duplicate ignored
+l.131 \item \textbf
+                   {Primitive NameNode Operations}\\ [7]) (./HOP.texpdfTeX warn
+ing (ext4): destination with the same identifier (name{page.8}) has been alread
+y used, duplicate ignored
 <to be read again> 
                    \relax 
 l.23 \chapter
@@ -937,11 +934,11 @@ Chapter 3.
 [9
 
 ] [10]
-<figs/preliminar/HOP_table_relation.png, id=499, 733.74126pt x 421.575pt>
+<figs/preliminar/HOP_table_relation.png, id=498, 733.74126pt x 421.575pt>
 File: figs/preliminar/HOP_table_relation.png Graphic file (type png)
 
 <use figs/preliminar/HOP_table_relation.png>
-<figs/preliminar/HOP_HDFS_Schema.png, id=500, 761.84625pt x 891.33pt>
+<figs/preliminar/HOP_HDFS_Schema.png, id=499, 761.84625pt x 891.33pt>
 File: figs/preliminar/HOP_HDFS_Schema.png Graphic file (type png)
 
 <use figs/preliminar/HOP_HDFS_Schema.png> [11 <./figs/preliminar/HOP_table_rela
@@ -973,11 +970,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 196--214
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figs/preliminar/mysql_cluster.png, id=527, 585.18625pt x 373.395pt>
+<figs/preliminar/mysql_cluster.png, id=526, 585.18625pt x 373.395pt>
 File: figs/preliminar/mysql_cluster.png Graphic file (type png)
 
 <use figs/preliminar/mysql_cluster.png> [14] [15]
-<figs/preliminar/nodegroups.png, id=542, 501.875pt x 506.89375pt>
+<figs/preliminar/nodegroups.png, id=541, 501.875pt x 506.89375pt>
 File: figs/preliminar/nodegroups.png Graphic file (type png)
 
 <use figs/preliminar/nodegroups.png>
@@ -1189,7 +1186,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 299--300
 
  []
 
-<figs/preliminar/Approach2.png, id=677, 669.50125pt x 254.9525pt>
+<figs/preliminar/Approach2.png, id=676, 669.50125pt x 254.9525pt>
 File: figs/preliminar/Approach2.png Graphic file (type png)
 
 <use figs/preliminar/Approach2.png>
@@ -1320,7 +1317,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 172--174
 
 ] [47] [48] (./RO_Nested_Snapshots_Impl_and_eval.tex
 Chapter 8.
-<figs/preliminar/Benchmark1.png, id=755, 724.7075pt x 372.39125pt>
+<figs/preliminar/Benchmark1.png, id=754, 724.7075pt x 372.39125pt>
 File: figs/preliminar/Benchmark1.png Graphic file (type png)
 
 <use figs/preliminar/Benchmark1.png>
@@ -1328,7 +1325,7 @@ Overfull \hbox (124.5227pt too wide) in paragraph at lines 41--42
  [][] 
  []
 
-<figs/preliminar/benchmark_graph2.png, id=756, 642.4pt x 481.8pt>
+<figs/preliminar/benchmark_graph2.png, id=755, 642.4pt x 481.8pt>
 File: figs/preliminar/benchmark_graph2.png Graphic file (type png)
 
 <use figs/preliminar/benchmark_graph2.png>)
@@ -1411,11 +1408,11 @@ ansactions .
 No file document.ind.
 [58] (./document.aux) ) 
 Here is how much of TeX's memory you used:
- 8705 strings out of 493848
- 124286 string characters out of 1152824
+ 8702 strings out of 493848
+ 124250 string characters out of 1152824
  215299 words of memory out of 3000000
- 11487 multiletter control sequences out of 15000+50000
- 22690 words of font info for 65 fonts, out of 3000000 for 9000
+ 11485 multiletter control sequences out of 15000+50000
+ 21198 words of font info for 62 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  45i,13n,38p,1108b,495s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{algorithm.2} has been refere
@@ -1435,7 +1432,7 @@ nts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/pala
 tino/uplb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/palatino/uplr8a.pfb><
 /usr/share/texmf-texlive/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-
 texlive/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on document.pdf (74 pages, 680039 bytes).
+Output written on document.pdf (74 pages, 679524 bytes).
 PDF statistics:
  937 PDF objects out of 1000 (max. 8388607)
  248 named destinations out of 1000 (max. 500000)

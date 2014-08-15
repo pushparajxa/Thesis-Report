@@ -4,7 +4,7 @@
 \contentsline {section}{\numberline {2.1}Introduction}{5}{section.2.1}
 \contentsline {section}{\numberline {2.2}Hadoop File System(HDFS)}{5}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}HDFS Architecture}{6}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}HDFS NameNode}{6}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.2}HDFS NameNode}{7}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}HDFS consistency model}{7}{subsection.2.2.3}
 \contentsline {subsection}{\numberline {2.2.4}POSIX compliant filesystem}{8}{subsection.2.2.4}
 \contentsline {chapter}{\numberline {3}Hadoop Open Platform as a service-HOP}{9}{chapter.3}
