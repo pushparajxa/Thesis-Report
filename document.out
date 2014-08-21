@@ -31,6 +31,7 @@
 \BOOKMARK [1][]{section.6.1}{Snapshottable Directories}{chapter.6}
 \BOOKMARK [1][]{section.6.2}{Modifications to the Schema}{chapter.6}
 \BOOKMARK [1][]{section.6.3}{Rules for Operations}{chapter.6}
+\BOOKMARK [2][]{subsection.6.3.1}{Example}{section.6.3}
 \BOOKMARK [1][]{section.6.4}{Listing children under a directory in a given Snapshot}{chapter.6}
 \BOOKMARK [1][]{section.6.5}{Listing current children under a directory }{chapter.6}
 \BOOKMARK [1][]{section.6.6}{Logging, Removing logs and Deleting inodes which are not referred by any snapshot}{chapter.6}

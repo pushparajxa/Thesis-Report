@@ -175,6 +175,123 @@ When an directory is deleted, first we will check  whether it is in a snapshot[e
 
 \end{enumerate}
 
+\subsection{Example}
+Consider the a small file-system tree.\\
+\begin{figure}[!h]
+\centering  
+ \includegraphics[scale=0.5]{figs/preliminar/FileSystemExample.png}
+  \caption{Sample File System Tree}
+  \label{fig:ExampleFileSystem}
+\end{figure}
+
+
+\begin{table}[!h]
+\textbf{ACTIONS}\\
+
+\begin{tabular}{|c|p{4cm}|c|p{8cm}|}
+\hline
+Directory&Opeartion&Time&Comments\\
+\hline
+A&Take Snapshot on A&1& \\
+\hline
+E&Create file F4&2&Insert row in Inodes table for F4 with parent E\\
+\hline
+E&Create file F5&3&Insert row in Inodes table for F5 with parent E.\\
+\hline
+D&Delete File F2&4&
+1)Insert row in d-list. 2)set isDeleted=1 on Inodes table.\\
+\hline
+A&Take Snapshot on A&5& \\
+\hline
+D&Create File F6&6&Insert row in Inodes table for F6 with parent D\\
+\hline
+D&Move File F1 to C&7&1)Insert row in MV-LIST.
+ 2)Insert row in MV-IN-LIST Table.
+ 3)Change the parent\_ id to 3 for F4 in inodes table.\\
+\hline
+\end{tabular}
+\caption{Operations}
+\label{table:Actions}
+\end{table}
+\pagebreak
+
+\begin{table}[!h]
+\textbf{SNAPS}\\
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+Inode\_ Id&User&Snapshot\_ id&Time\\
+\hline
+A&Admin&SA1&1\\
+\hline
+A&Admin&SA2&5\\
+\hline
+\end{tabular}
+\caption{List of Snpashots taken}
+\label{table:snaps}
+\end{table}
+
+
+\begin{table}[!h]
+\textbf{C-List}\\
+
+\begin{tabular}{|c|c|c|}
+\hline
+Inode\_ Id&Time&Created\_ Node\_ Id\\
+\hline
+E&2&F4\\
+\hline
+E&3&F5\\
+\hline
+D&6&F6\\
+\hline
+\end{tabular}
+\caption{C-List}
+\label{table:clist}
+\end{table}
+
+\begin{table}[!h]
+\textbf{D-List}\\
+
+\begin{tabular}{|c|c|c|}
+\hline
+Inode\_ Id&Time&Deleted\_ Node\_ Id\\
+\hline
+D&4&F2\\
+\hline
+\end{tabular}
+\label{table:dlist}
+\caption{Dlist}
+\end{table}
+
+\begin{table}[!h]
+\textbf{MV-List}\\
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+Inode\_ Id&Time&Moved\_ Node\_ Id&Original Row\\
+\hline
+A&7&F1&Orignal Row before moving\\
+\hline
+\end{tabular}
+\caption{MV List}
+\label{table:mvlist}
+\end{table}
+
+
+\textbf{MV-IN-List}\\
+
+\begin{tabular}{|c|c|c|}
+\hline
+Inode\_ Id&Time&MovedIn\_ Node\_ Id\\
+\hline
+C&7&F1\\
+\hline
+\end{tabular}
+
+
+\pagebreak
+
 \section{Listing children under a directory in a given Snapshot}
 To get the subtree under a directory at a particular snapshot, we use the following pseduo algorithm called with directory id and the time at which snapshot was taken. The algorithm presented here gives a general idea, the implementation in sql\cite{Snapshot-ls} addresses/solves the fine grained issues, for example, inode created after snapshot, moved, then moved-in, like those cases.
 

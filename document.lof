@@ -9,10 +9,13 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Deletion of Snapshot\relax }}{37}{figure.caption.15}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Sample File System Tree\relax }}{32}{figure.caption.14}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Deletion of Snapshot\relax }}{39}{figure.caption.21}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Benchmark on Single Directory\relax }}{50}{figure.caption.16}
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Benchmark on Single Directory Graph\relax }}{50}{figure.caption.17}
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Benchmark on Single Directory\relax }}{52}{figure.caption.22}
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Benchmark on Single Directory Graph\relax }}{52}{figure.caption.23}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {9.1}{\ignorespaces Benchmark on MySqlServer\relax }}{53}{figure.9.1}
+\contentsline {figure}{\numberline {9.2}{\ignorespaces Benchmark-Graph on MySqlServer\relax }}{54}{figure.9.2}
 \addvspace {10\p@ }

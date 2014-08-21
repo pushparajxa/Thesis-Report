@@ -41,6 +41,7 @@ In section \ref{loggingApproaches} we discussed two approaches to log the operat
 We presented independent solutions for Read-Only Nested Snapshots and Read-Only Root Level Snapshots.It is effective to integrate both solutions by analysing and designing new algorithms.
 \item \textbf{Roll-Backing to a particular snapshot:}
 We discussed how to retrieve subtree at a particular snpashot but didn't propose method to roll back to particular snapshot.At present we have some ideas to explore upon. We need to evaluate them by benchmarking.
+\item \textbf{Length of file being written} The solution to Read only root level snapshot need to be enhanced to support snapshotting of files that are being written while snapshotting and writing to file takes place at the same time.
 \end{enumerate}
 
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

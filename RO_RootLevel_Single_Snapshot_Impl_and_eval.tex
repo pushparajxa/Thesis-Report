@@ -37,43 +37,32 @@
 
 The roll back algorithm mentioned in \ref{alg:ROSSRB} is implemented using a thread pool, where each thread processes given number of table records [100,000]. The implementation is executed at MySql server as well as via directly connecting NDB-Cluster\cite{29} with ClusterJ\cite{clusterj}. 
 
-The results with evaluation at MySql Server are shown below.
-\begin{table}[t]
-\centering
-\begin{tabular}{|p{4cm}|p{4cm}|l|l|l|}
-\hline
-UnModified inodes 
-that are Deleted&
-UnModified inodes 
-that are not Deleted&
-Modified inodes&
-New Inodes&
-Time\\
-\hline
+The results with evaluation at MySql Server are shown below.\\
+\begin{center}
+\includegraphics[scale=0.65]{figs/preliminar/MySqlServerSingleSnapshotEval.png}
+\captionof{figure}{Benchmark on MySqlServer}\label{fig:MySqlServerSSE}%
+\end{center}
 
-\end{tabular}
-\caption{Roll Back Time with MySql Server}
-\label{rollBack_MySqlServer}
-\end{table}
+\pagebreak
 
-The results with evaluation at NDB cluster are shown below.
-\begin{table}[t]
-\centering
-\begin{tabular}{|p{4cm}|p{4cm}|l|l|l|}
-\hline
-UnModified inodes 
-that are Deleted&
-UnModified inodes 
-that are not Deleted&
-Modified inodes&
-New Inodes&
-Time\\
-\hline
+\begin{center}
+\includegraphics[scale=0.65]{figs/preliminar/MySqlServerSingleSnapshotEvalGraph.png}
+\captionof{figure}{Benchmark-Graph on MySqlServer}\label{fig:MySqlServerSSEGraph}%
+\end{center}
 
-\end{tabular}
-\caption{Roll Back Time with ClusterJ}
-\label{rollBack_clusterj}
-\end{table}
+
+The results with evaluation by ClusterJ  are shown below.\\
+\begin{center}
+\includegraphics[scale=0.65]{figs/preliminar/ClusterJSingleSnapshotEval.png}
+\captionof{figure}{Benchmark on ClusterJ}\label{fig:ClusterJSSE}%
+\end{center}
+
+\pagebreak
+
+\begin{center}
+\includegraphics[scale=0.65]{figs/preliminar/ClusterJSingleSnapshotEvalGraph.png}
+\captionof{figure}{Benchmark-Graph on ClusterJ}\label{fig:ClusterJSSEGraph}%
+\end{center}
 
 
 
