@@ -214,8 +214,15 @@ resources, and great colleagues who always willing to exchange ideas.
 
 \chapter*{Abstract}
 \thispagestyle{empty}
+The amount of data stored in modern data centres is growing rapidly nowadays.
+Large-scale distributed file systems, that maintain the massive data sets in data
+centres, are designed to work with commodity hardware. Due to the quality and
+quantity of the hardware components in such systems, failures are considered
+normal events and, as such, distributed file systems are designed to be highly
+fault-tolerant. \\\\
+\hspace{4em}     A concrete implementation of such a file system is the Hadoop Distributed File
+System (HDFS).Snapshot means capturing the state of the storage system at an exact point in time and is used to provide full recovery of data when lost.Operational as well as analytical applications manipulate the data in the distributed file system on behalf of the user or the administrator. Application-level errors or even inadvertent user errors can mistakenly delete data or modify data in an unexpected way. In this case, snapshots can be used to recover to a known, well-defined state.Snapshots can be used in Model Training, Managing Real-time Data Analysis and also to produce backups on the fly(Hot Backups).We designed nested snapshots which enables multiple snapshots on any directory. We designed and implemented root level single snapshot by which roll-back during software up-gradation can be made.We evaluate our designs and algorithms, and we show that time to take snapshot is constant and roll-back time is proportional to the changes since snapshot.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 \newpage
 
@@ -236,7 +243,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 \noindent HDFS
 
-\noindent Snapshots
+\noindent FileSystem Snapshots
 
 \noindent Hop
 

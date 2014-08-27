@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.8.6)  20 AUG 2014 19:21
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.8.6)  26 AUG 2014 22:37
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -821,7 +821,12 @@ figs/preliminar/Logo_IST_web.pdf>] [2
 
 ] [3] [4
 
-] [5] [6
+]
+Underfull \hbox (badness 10000) in paragraph at lines 217--225
+
+ []
+
+[5] [6
 
 ] [7] [8
 
@@ -830,8 +835,7 @@ LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 2.
-
-[1
+ [1
 
 ] [2] [3])
 \tf@toc=\write8
@@ -845,7 +849,8 @@ LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10.95> not available
 
 ] [6
 
-] (./document.lot)
+]
+(./document.lot)
 \tf@lot=\write10
 \openout10 = `document.lot'.
 
@@ -1301,65 +1306,59 @@ Underfull \hbox (badness 10000) in paragraph at lines 73--85
  []
 
 [44]
-Overfull \hbox (45.17041pt too wide) in paragraph at lines 151--151
+Overfull \hbox (84.59036pt too wide) in paragraph at lines 218--218
+ []        \OT1/pcr/m/n/10.95 //parentStck is used to track completion of proce
+ssing of a directory.[] 
+ []
+
+
+Overfull \hbox (45.17041pt too wide) in paragraph at lines 218--218
  []                \OT1/pcr/m/n/10.95 //This node is already marked deleted, so
  nothing to do.[] 
  []
 
 
-Overfull \hbox (202.85022pt too wide) in paragraph at lines 151--151
+Overfull \hbox (58.3104pt too wide) in paragraph at lines 218--218
  []             \OT1/pcr/m/n/10.95 * This Inode can be a directory or file also
- it can be new or modified or original.[] 
+ it can be new or[] 
  []
 
 
-Overfull \hbox (25.46043pt too wide) in paragraph at lines 151--151
- []                \OT1/pcr/m/n/10.95 children = ((INodeDirectory) tempNode).ge
-tChildren();[] 
- []
-
-
-Overfull \hbox (18.89044pt too wide) in paragraph at lines 151--151
+Overfull \hbox (18.89044pt too wide) in paragraph at lines 218--218
  []                    \OT1/pcr/m/n/10.95 if(tempNode.getStatus()==SnapShotCons
 tants.New){[] 
  []
 
 [45]
-Overfull \hbox (150.29028pt too wide) in paragraph at lines 151--151
- []                        \OT1/pcr/m/n/10.95 tempNode.setIsDeletedNoPersistanc
-e(SnapShotConstants.isDeleted);[] 
+Overfull \hbox (51.7404pt too wide) in paragraph at lines 218--218
+ []                    \OT1/pcr/m/n/10.95 children = ((INodeDirectory) tempNode
+).getChildren();[] 
  []
 
 
-Overfull \hbox (170.00026pt too wide) in paragraph at lines 151--151
- []            \OT1/pcr/m/n/10.95 } else if (tempNode instanceof INodeFile || t
-empNode instanceof INodeSymlink) {[] 
+Overfull \hbox (5.75046pt too wide) in paragraph at lines 218--218
+ []                    \OT1/pcr/m/n/10.95 if (children != null && !children.isE
+mpty()) {[] 
  []
 
 
-Overfull \hbox (294.83011pt too wide) in paragraph at lines 151--151
- []                    \OT1/pcr/m/n/10.95 //We can delete this file permanently
- and update the ansectors about changes in the quota.[] 
+Overfull \hbox (38.60042pt too wide) in paragraph at lines 218--218
+ []                     \OT1/pcr/m/n/10.95 //update the ancestors about changes
+ in the quota.[] 
  []
 
 
-Overfull \hbox (84.59036pt too wide) in paragraph at lines 151--151
- []                    \OT1/pcr/m/n/10.95 //Remove the blocks associated with t
-his file permanently.[] 
+Overfull \hbox (5.75046pt too wide) in paragraph at lines 218--218
+ []                     \OT1/pcr/m/n/10.95 //Remove the blocks associated with 
+this file[] 
  []
 
-
-Overfull \hbox (281.69012pt too wide) in paragraph at lines 151--151
- []                \OT1/pcr/m/n/10.95 } else if (tempSts == SnapShotConstants.O
-riginal || tempSts == SnapShotConstants.Modified) {[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 172--174
+[46]
+Underfull \hbox (badness 10000) in paragraph at lines 241--243
 
  []
 
-[46]) [47] [48
+) [47] [48
 
 ] [49] [50] (./RO_Nested_Snapshots_Impl_and_eval.tex
 Chapter 8.
@@ -1391,7 +1390,12 @@ Overfull \vbox (15.40207pt too high) detected at line 23
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--41
+Underfull \hbox (badness 10000) in paragraph at lines 37--40
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
 
@@ -1403,36 +1407,41 @@ File: figs/preliminar/MySqlServerSingleSnapshotEval.png Graphic file (type png)
  <use figs/preliminar/MySqlServerSingleSnapshotEval.png>
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 43.
+(caption)                particular \caption on input line 46.
 See the caption package documentation for explanation.
 
 [53
 
- <./figs/preliminar/MySqlServerSingleSnapshotEval.png (PNG copy)>]
-<figs/preliminar/MySqlServerSingleSnapshotEvalGraph.png, id=807, 642.4pt x 481.
+]
+Overfull \hbox (71.14673pt too wide) has occurred while \output is active
+\OT1/ppl/m/n/10.95 54 \OT1/ppl/m/sl/10.95 CHAPTER 9.  READ-ONLY ROOT LEVEL SING
+LE SNAPSHOT IMPLEMENTATION AND EVALUATION
+ []
+
+[54 <./figs/preliminar/MySqlServerSingleSnapshotEval.png (PNG copy)>]
+<figs/preliminar/MySqlServerSingleSnapshotEvalGraph.png, id=811, 642.4pt x 481.
 8pt>
 File: figs/preliminar/MySqlServerSingleSnapshotEvalGraph.png Graphic file (type
  png)
  <use figs/preliminar/MySqlServerSingleSnapshotEvalGraph.png>
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 50.
+(caption)                particular \caption on input line 53.
 See the caption package documentation for explanation.
 
-)
+[55 <./figs/preliminar/MySqlServerSingleSnapshotEvalGraph.png (PNG copy)>])
 Overfull \hbox (71.14673pt too wide) has occurred while \output is active
-\OT1/ppl/m/n/10.95 54 \OT1/ppl/m/sl/10.95 CHAPTER 9.  READ-ONLY ROOT LEVEL SING
+\OT1/ppl/m/n/10.95 56 \OT1/ppl/m/sl/10.95 CHAPTER 9.  READ-ONLY ROOT LEVEL SING
 LE SNAPSHOT IMPLEMENTATION AND EVALUATION
  []
 
-[54 <./figs/preliminar/MySqlServerSingleSnapshotEvalGraph.png (PNG copy)>]
-[55
+[56
 
-] [56] (./conclusion.tex
+] [57] [58] (./conclusion.tex
 Chapter 10.
-[57
+[59
 
-]) (./document.bbl [58]
+]) (./document.bbl [60]
 Underfull \hbox (badness 10000) in paragraph at lines 4--9
 \OT1/pcr/m/n/10.95 / / hadoop . apache . org / docs / r2 . 0 . 6-[]alpha / hado
 op-[]project-[]dist /
@@ -1444,7 +1453,7 @@ Underfull \hbox (badness 1019) in paragraph at lines 40--43
 2, 2014.[][]$\OT1/pcr/m/n/10.95 http : / /
  []
 
-[59
+[61
 
 ]
 Underfull \hbox (badness 5460) in paragraph at lines 71--77
@@ -1460,15 +1469,15 @@ ansactions .
 
 )
 No file document.ind.
-[60] (./document.aux) ) 
+[62] (./document.aux) ) 
 Here is how much of TeX's memory you used:
- 8733 strings out of 493848
- 125187 string characters out of 1152824
+ 8735 strings out of 493848
+ 125201 string characters out of 1152824
  217598 words of memory out of 3000000
  11504 multiletter control sequences out of 15000+50000
  21198 words of font info for 62 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 45i,13n,38p,1108b,495s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 45i,13n,38p,1108b,497s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{algorithm.2} has been refere
 nced but does not exist, replaced by a fixed one
 
@@ -1486,9 +1495,9 @@ nts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/pala
 tino/uplb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/palatino/uplr8a.pfb><
 /usr/share/texmf-texlive/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-
 texlive/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on document.pdf (76 pages, 760858 bytes).
+Output written on document.pdf (78 pages, 764173 bytes).
 PDF statistics:
- 969 PDF objects out of 1000 (max. 8388607)
- 257 named destinations out of 1000 (max. 500000)
+ 978 PDF objects out of 1000 (max. 8388607)
+ 259 named destinations out of 1000 (max. 500000)
  557 words of extra memory for PDF output out of 10000 (max. 10000000)
 

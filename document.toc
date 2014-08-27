@@ -56,7 +56,7 @@
 \contentsline {section}{\numberline {8.1}Benchmark for measuring query execution time}{51}{section.8.1}
 \contentsline {chapter}{\numberline {9}Read-Only Root Level Single Snapshot Implementation and Evaluation}{53}{chapter.9}
 \contentsline {section}{\numberline {9.1}Evaluation}{53}{section.9.1}
-\contentsline {part}{V\hspace {1em}Conclusions}{55}{part.5}
-\contentsline {chapter}{\numberline {10}Conclusions \& Future Work}{57}{chapter.10}
-\contentsline {section}{\numberline {10.1}Conclusions}{57}{section.10.1}
-\contentsline {section}{\numberline {10.2}Future Work}{57}{section.10.2}
+\contentsline {part}{V\hspace {1em}Conclusions}{57}{part.5}
+\contentsline {chapter}{\numberline {10}Conclusions \& Future Work}{59}{chapter.10}
+\contentsline {section}{\numberline {10.1}Conclusions}{59}{section.10.1}
+\contentsline {section}{\numberline {10.2}Future Work}{59}{section.10.2}

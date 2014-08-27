@@ -169,7 +169,7 @@ Stores the blocks that are modified in a file after the snapshot was taken on th
 \item When you delete a file , put it in the dlist. And set isInodeDeleted to true.
 
 \item Deleting a directory
-When an directory is deleted, first we will check  whether it is in a snapshot[explained later], if yes then we will set isDeleted=1 and also for all of its childrens[recursive]. We only put the directory in D-List of its parent and we do not put children in D-List.
+When an directory is deleted, first we will check  whether it is in a snapshot[explained later], if yes then we will set isDeleted=1 and also for all of its children[recursive]. We only put the directory in D-List of its parent and we do not put children in D-List.
 
 \item When an inode is moved to some other directory we put it in  MV-List of parent directory. We place it in MV-IN-list of destination  directory.[the parent\_ id is set to the destination directory]
 
