@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.8.6)  26 AUG 2014 22:37
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.8.6)  1 SEP 2014 16:01
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1312,12 +1312,6 @@ ssing of a directory.[]
  []
 
 
-Overfull \hbox (45.17041pt too wide) in paragraph at lines 218--218
- []                \OT1/pcr/m/n/10.95 //This node is already marked deleted, so
- nothing to do.[] 
- []
-
-
 Overfull \hbox (58.3104pt too wide) in paragraph at lines 218--218
  []             \OT1/pcr/m/n/10.95 * This Inode can be a directory or file also
  it can be new or[] 
@@ -1495,7 +1489,7 @@ nts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/pala
 tino/uplb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/palatino/uplr8a.pfb><
 /usr/share/texmf-texlive/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-
 texlive/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on document.pdf (78 pages, 764173 bytes).
+Output written on document.pdf (78 pages, 764151 bytes).
 PDF statistics:
  978 PDF objects out of 1000 (max. 8388607)
  259 named destinations out of 1000 (max. 500000)

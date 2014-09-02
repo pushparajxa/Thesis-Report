@@ -200,10 +200,12 @@ void deleteWithSnapshotAtRootTaken(INode targetNode){
                          tempNode instanceof INodeSymlink) {
                          
                  if (tempSts == SnapShotConstants.New) {
+                    atomic(In Single-Transaction){
                      //We can delete this file permanently and 
                      //update the ancestors about changes in the quota.
                      //Remove the blocks associated with this file
                      // permanently.
+                     }
                  }
              } 
              
